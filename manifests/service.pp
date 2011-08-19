@@ -4,5 +4,6 @@ class kwick_wwwtoolsd::service {
         enable     => true,
         hasrestart => true,
         hasstatus  => false,
+        require    => Class['kwick_wwwtoolsd::install'],
     }
 }
